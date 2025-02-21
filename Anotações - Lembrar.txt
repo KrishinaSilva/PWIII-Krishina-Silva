@@ -5,9 +5,19 @@ Receitinha Git
 - git config --global --list(confirmar informações de usuário)
 - git clone https://github.com/KrishinaSilva/PWIII-KrishinaSilva.git
 - code .
-- git add "Anotacoes - Lembrar.txt"(para adicionar na cesta e ficar pronto pra commitar)
-- git commit -m "Adiciona Anotacoes - Lembrar.txt"(commit)
+COMMIT
+- git status (verficar a situação atual do repositório para o git reconhecer as pastas antes de fazer o commit)
+- git add . (para adicionar tudo que você colocou na sexta) ou git add "Anotacoes - Lembrar.txt"(para adicionar um documento específico e ficar pronto pra commitar)
+- git commit -m "mensagemdocommit"(commit/comentário)
+- git status (ver se está na sexta)
 - git push origin main(enviar repositório)
+
+CRIANDO E UTILIZANDO A APLICAÇÃO LARAVEL
+
+- Baixar o composer e xampp
+- Composer global require laravel/installer (instalar o instalador do laravel)
+- laravel new example-app (Criando a pasta do projeto)
+- colar projeto no htdocs da pasta xampp
 
 Lembrar 
 
