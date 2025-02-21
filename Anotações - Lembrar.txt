@@ -1,0 +1,14 @@
+Receitinha Git
+
+- git config --global user.name "Krishina Silva"
+- git config --global user.email "krishinasilva03@hotmail.com"
+- git config --global --list(confirmar informações de usuário)
+- git clone https://github.com/KrishinaSilva/PWIII-KrishinaSilva.git
+- code .
+- git add "Anotacoes - Lembrar.txt"(para adicionar na cesta e ficar pronto pra commitar)
+- git commit -m "Adiciona Anotacoes - Lembrar.txt"(commit)
+- git push origin main(enviar repositório)
+
+Lembrar 
+
+- Fazer um pasta no GitHub para os projetos das aulas de Programação de Aplicativo Mobile II
