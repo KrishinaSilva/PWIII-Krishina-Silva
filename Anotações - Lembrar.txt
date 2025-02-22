@@ -18,7 +18,21 @@ CRIANDO E UTILIZANDO A APLICAÇÃO LARAVEL
 - Composer global require laravel/installer (instalar o instalador do laravel)
 - laravel new example-app (Criando a pasta do projeto)
 - colar projeto no htdocs da pasta xampp
+- iniciar apache e MySQL
+- abrir o git, fazer os paranaue
+- code .
+- php artisan serve (iniciar servidor)
+- digite na url: localhost:8000
+- http://localhost/phpmyadmin/ (MySQL)
 
 Lembrar 
 
 - Fazer um pasta no GitHub para os projetos das aulas de Programação de Aplicativo Mobile II
+
+*Aula 2 - 21/02/2025* 
+
+(não consegui iniciar o server na sala, então estou anotando nas notas para tentar novamente depois)
+
+- trabalhar com a view
+- criar uma view e uma rota
+
