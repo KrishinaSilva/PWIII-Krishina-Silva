@@ -3,7 +3,7 @@ Receitinha Git
 - git config --global user.name "Krishina Silva"
 - git config --global user.email "krishinasilva03@hotmail.com"
 - git config --global --list(confirmar informações de usuário)
-- git clone https://github.com/KrishinaSilva/PWIII-KrishinaSilva.git
+- git clone https://github.com/KrishinaSilva/PWIII-KrishinaSilva.git ou https://github.com/KrishinaSilva/PAMII-Krishina-Silva.git
 - code .
 COMMIT
 - git status (verficar a situação atual do repositório para o git reconhecer as pastas antes de fazer o commit)
@@ -14,12 +14,18 @@ COMMIT
 
 CRIANDO E UTILIZANDO A APLICAÇÃO LARAVEL
 
-- Baixar o composer e xampp
-- Composer global require laravel/installer (instalar o instalador do laravel)
-- laravel new example-app (Criando a pasta do projeto)
-- colar projeto no htdocs da pasta xampp
-- iniciar apache e MySQL
-- abrir o git, fazer os paranaue
+- Baixar o e xampp e depois o composer
+- ver a versão do xampp e composer(php --version e composer --version)
+- instalar composer (composer global require laravel/installer)
+- Criando a pasta do projeto caso não tenha no cmd -> (laravel new nome-do-projeto)
+- Colar projeto no htdocs da pasta xampp
+- Iniciar Apache e MySQL
+- Baixar o laravel -> (# Run as administrator...
+Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://php.new/install/windows/8.4')))
+- Instalar o instalador do laravel no prompt -> (Composer global require laravel/installer)
+- Baixar dependências do composer -> (composer install) - super importante senão não roda o php srtisan serve
+- Abrir o git, fazer os paranaue e verificar se todas as versões(composer, laravel e php) estão batendo
+- Abrir o projeto pelo terminal no htdocs do xampp
 - code .
 - php artisan serve (iniciar servidor)
 - digite na url: localhost:8000
@@ -41,3 +47,7 @@ Lembrar
 - extensão vscode - SQLite(mostra a documentação-tabelas-do sql)
 - (Próxima aula)trazer a situação de rotas de banco de dados pra fazer consulta e instalar um sqa(vull)
 
+*Aula 3 - 10/03/2025*
+
+- Fazer uma tabela de cadastro e uma view do formulário e uma view que mostre as informações de cadastro
+*ele quer que separe no GitHub as atividades por pastas - aula01, aula02, aula03-essa aula*
