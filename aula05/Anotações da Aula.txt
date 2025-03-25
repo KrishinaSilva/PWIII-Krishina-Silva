@@ -1,0 +1,87 @@
+Aula 05 - 24/03/2025
+
+---------------------------------------------------------------------------------------------------------------------
+
+Iniciando o servidor
+
+- o Readme.md do projeto faz um tutorial dos comandos básicos, caso não tivesse só é usar o documento package.json 
+- entra na pasta do projeto
+- digite no prompt npm run dev para iniciar o servidor
+- ctrl + clique do mouse em cima do http://localhost:3000 que vc vai ser direcionado para o navegador 
+- o site que cria está dentro do documento page.tsx, ou seja, o index.html = page.tsx
+- vai dentro do projeto na pasta app e cria uma pasta chamada teste e dentro dela cria o page.tsx
+- na aba do navegador digite \nomedapasta(teste) e ela vai criar uma rota - - você cria a pasta com o nome da sua rota
+- no site na página inicial clica em deploy e loga com o github
+
+Versel - autoriza o site na web
+
+- clica em install na aba de instalar repositorio que vai baixar todos os repositórios
+- clica em import do repositório do next do github
+- da o nome que você quiser
+- escolhe o framework next.js, na root directory clica em edit e escolhe o portifolio e clica em deploy
+- posso comprar um dominio, adiconar previews etc
+- digita na web https://pwiii-krishina-silva-nextjs.vercel.app/ que vai aparecer o seu site
+
+estamos trabalhando na branch main e isso não é o correto temos que trabalhar com os braços e depois mandar pra main e fazer o deploy
+
+--------------------------------------------------------------------------------------------------------------------
+
+O QUE É UMA MAIN/BRENCH?
+
+*o github não faz o push de arquivos e pastas vazias*
+
+	 O repositório é onde está no galho principal do GitHub, chamado também de ambiente de produção, dentro do repositório está a main que é a área do projeto que está pronto. Em várias empresas e projetos é feita uma copia da main e assim se cria o ambiente de desenvolvimento, nele vai ter o ambiente de homologação, que é a versão beta ou a mais nova que não lançou ainda na main principal, nessa área de homologação vai ter os feedbacks que vão ser ou não preparadas para serem lançada no galho principal. Após o feedback uma cópia editada que foi feita no ambiente de desenvolvimento vai ser enviada para uma branch da main que vai atualizar e enviar para a main principal do GitHub.
+
+CRIANDO UMA BRANCH
+
+- Dentro do git bash execute o seguinte código:
+	git checkout -b nome_brench
+	ex: git checkout -b cria_tela_login ou teste/nome sobrenome ou meu nome/o_que_foi_feito)
+- o nome da branch surge(vc automaticamente vai estar dentro da branch) e ele não vai interferir na main a não ser que eu queira
+- para juntar essas branchs
+- abrir o vs code e fazer qualquer modificação e seguir os passos a seguir
+	git status
+	git add .
+	git commit -m ""
+	git push (ele vai indicar o comando certo)
+	git push --set-upstream origin primeira_brench
+	*o git pull puxa as atualizações, se vc tiver no seu próprio repositório ele não funciona*
+- para ver se as branchs estão no sistema, entrem no GitHub vai no repositório clica em main que aparece as branchs
+- para voltar para a main digite:
+	git checkout main
+- para ir para a brench escolhida digite:
+	git checkout primeira_brench
+-Dentro o github tem um botão chamado "Compare & pull request" clique nele e vai abrir uma janela importante
+	Estaremos fazendo o início de uma merge request. Merge ou megear: juntar as novidades na branch principal
+	Em cima do add a titlle tem uma barra que serve para você escolher para onde quer mandar a alteração da branch(main <- branch)
+	O texto able to merge significa que a branch está pronta para alteração
+	Coloque o título que você quiser e a descrição a mesma coisa, no título é bom ser suscinto e na descrição detalhar de forma objetiva e clara.
+	Finalizado os detalhamentos crie em create pull request
+	Vai na aba pull requests, que vai conter os nomes e a ordem que as branchs foram criadas, você pode verificar e fazer comentários no próprio código e um comentário geral(reviews). Por fim, clique em merge pull request e confirm merge, pois assim será.
+	Dê git pull no cmd que vai puxar as alterações do mergeadas
+
+CONFLITO DE MERGE
+
+Acontece pois a mesma linha no mesmo arquivo foi mudado, como resolver?
+
+- no github clica no pull request
+- vai aparecer uma mensagem "This branch has conflict ..."
+- é feito no computador do colega que deu conflito
+- clica no botão de Resolve Conflicts
+- muda para a branch e dê git pull por garantia
+- use o comando:
+	git pull origin main(puxando as alterações da main)
+- vai aparecer visualmente no vscode as mudanças
+	head o que estava
+	reps o que está vindo 
+	vai ter aceitar alteração atual, aceitar alteração de entrada e ambas as alterações, além de comparar ambas as alterações
+- quando for pouco código clique em aceitar ambas as alterações que vai mesclar
+- Arruma da forma que quiser, salve e assim vai ser resolvido
+- para mandar de volta 
+	git status 
+	git add .
+	git commit -m "resolve conglito de merge"
+	git push
+	No github faça o merge
+	
+*O programador mais habilidoso será responsável por enviar os branchs para a main e responder os pull requests*
