@@ -55,7 +55,3 @@ HACKS
 - git branch (significa que o gitbash está habilitado para todas as máquinas)
 - não usar o gitbash pq é o que mais da erro
 - ctrl + " abre o terminal do vscode
-
-
-
- 
