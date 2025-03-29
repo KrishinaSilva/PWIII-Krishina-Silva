@@ -1,0 +1,131 @@
+Atividade Formulário
+
+- Fazer uma tabela de cadastro e uma view do formulário e uma view que mostre as informações de cadastro
+- só consegui fazer umas partes
+
+Código HTML
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastrar Usuário</title>
+</head>
+<body>
+    <h1>Cadastrar Usuário</h1>
+    <form action="{{ route('users.store') }}" method="POST">
+        @csrf
+        <label>Nome:</label>
+        <input type="text" name="name" required>
+        <label>Email:</label>
+        <input type="email" name="email" required>
+        <label>Senha:</label>
+        <input type="password" name="password" required>
+        <button type="submit">Cadastrar</button>
+    </form>
+</body>
+</html>
+
+
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Usuários</title>
+</head>
+<body>
+    <h1>Lista de Usuários</h1>
+    <a href="{{ route('users.create') }}">Cadastrar Novo Usuário</a>
+    @if(session('success'))
+        <p style="color: green;">{{ session('success') }}</p>
+    @endif
+    <ul>
+        @foreach($users as $user)
+            <li>{{ $user->name }} - {{ $user->email }}</li>
+        @endforeach
+    </ul>
+</body>
+</html>
+
+
+Código CSS
+
+/* Resetando margens e preenchimento padrão */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Definindo a fonte do site */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Container principal que envolve o formulário */
+.container {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 500px;
+}
+
+/* Estilo para o título */
+h1 {
+    text-align: center;
+    color: #4CAF50;
+    margin-bottom: 20px;
+}
+
+/* Estilos para os labels */
+label {
+    font-size: 14px;
+    color: #333;
+    margin-bottom: 5px;
+    display: block;
+}
+
+/* Estilos para os inputs de texto */
+input[type="text"],
+input[type="number"],
+input[type="email"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+/* Estilo para o botão de submit */
+input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    width: 100%;
+}
+
+input[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+/* Estilo para os campos obrigatórios */
+input:required {
+    border-color: #ff0000;
+}
+

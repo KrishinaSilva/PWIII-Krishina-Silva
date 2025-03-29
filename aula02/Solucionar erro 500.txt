@@ -1,0 +1,13 @@
+Seu projeto Laravel foi baixado do GitHub e ao iniciar acusa erro 500??
+Seus problemas acabaram!!!!
+
+1 - Dentro da pasta do projeto rode o comando 'composer install' no terminal
+
+2 - Copie o arquivo '.env.example' e renomeie para '.env' na pasta raiz.
+
+3 - Rode o comando 'php artisan key:generate'
+
+4 - Rode o comando 'php artisan migrate'
+
+5 - Para finalizar inicie seu servidor com o comando 'php artisan serve'
+

@@ -1,0 +1,56 @@
+Aula 2 - 21/02/2025 
+
+(não consegui iniciar o server na sala, então estou anotando nas notas para tentar novamente depois)
+(descobri o erro, é novamente a bendita versão do php que é inferior)
+
+- trabalhar com a view
+- criar uma view e uma rota
+- criar uma migration de cadastro de usuário simples
+- só é precido o php artisan serve + extensão vscode
+- extensão vscode - SQLite(mostra a documentação-tabelas-do sql)
+- (Próxima aula)trazer a situação de rotas de banco de dados pra fazer consulta e instalar um sqa(vull)
+
+Sqlite
+
+abrindo: >sqlite (open database) e seleciona a sua tabela
+
+
+Aula2 continuação - 24/02/2025
+
+Aula de banco de dados - nome da aula de hoje pra colocar no repositório
+
+*Routes -> Web.php*
+
+Route::get('/users/{param}', function ($param) {
+	return $param;
+});
+
+//Parâmetros-fazer pesquisa, é tipo json - PESQUISAR
+Route::get('/users/{param}/{paramii}', function ($param, $paramii) {
+	return $param. '-' . $paramii;
+});
+
+//Formas elegantes de trabalhar com routes/rotas
+//Trabalhar com prefixos
+Route::prefix('usuarios')->group(function(){
+	Route::get('/edit', function() {
+		return 'edit';
+	});
+	Route::get('/delete', function() {
+		return 'delete';
+	});
+});
+
+//Mocar e copular dados
+Route::get('/dados-de-usuarios/{user}', function(\App\Models\User $user){
+		return $user;
+});
+
+*database -> factory(fábrica) *
+
+- O factory sempre irá fábricar algo, ele é planejado pelo desenvolver para fazer testes e criar algum tipo de dado
+- Sempre o factory e seeders serão criados
+- O seeders roda a fábrica e cria informações básicas - PESQUISAR como criar em casa 
+- Descomentar a linha 16 do seeders se não não roda
+- no cmd do VsCode, entra no projeto e digite: php artisan migrate --seed. Ela vai fazer um seed, atualiza a aba do SQlite e ele vai criar uma série de banco de dados, ou seja informações para o seu banco.
+

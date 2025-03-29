@@ -1,7 +1,7 @@
 Receitinha Git
 
-- git config --global user.name "Krishina Silva"
-- git config --global user.email "krishinasilva03@hotmail.com"
+- git config --global user.name "nome_usuario"
+- git config --global user.email "email@hotmail.com"
 - git config --global --list(confirmar informações de usuário)
 - git clone https://github.com/KrishinaSilva/PWIII-KrishinaSilva.git ou https://github.com/KrishinaSilva/PAMII-Krishina-Silva.git
 - code .
@@ -31,11 +31,11 @@ Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManage
 - digite na url: localhost:8000
 - http://localhost/phpmyadmin/ (MySQL)
 
-Lembrar 
+*Aula 1 - 21/02/2025* 
 
-- Fazer um pasta no GitHub para os projetos das aulas de Programação de Aplicativo Mobile II
+- Instalação e Configuração de ambiente somente
 
-*Aula 2 - 21/02/2025* 
+*Aula 2 - 24/02/2025* 
 
 (não consegui iniciar o server na sala, então estou anotando nas notas para tentar novamente depois)
 (descobri o erro, é novamente a bendita versão do php que é inferior)
@@ -51,3 +51,17 @@ Lembrar
 
 - Fazer uma tabela de cadastro e uma view do formulário e uma view que mostre as informações de cadastro
 *ele quer que separe no GitHub as atividades por pastas - aula01, aula02, aula03-essa aula*
+
+*Aula 4 - 17/03/2025* - Correção atividade formulário, demonstração dos dados e introdução ao Next.js
+
+- Começou criando uma Model de usuários.php
+- Cria o controller UsuariosController
+   *store armazena já o registro que já ta pronto, o create é o que vai criar do zero*
+- html na view
+- demonstração da atividade funcionando
+
+*assim termina o laravel, recordação do básico que o alan ensinou*
+
+O next.js é um ecossistema node que usa javascript e é parecido com o laravel, tendo soluções pré-instaladas como o laravel  e um framework react, ele faz coisas rotineiras de API´S como consultas, cadastros, rotas etc. de um framework.
+
+- mechemos no versel
