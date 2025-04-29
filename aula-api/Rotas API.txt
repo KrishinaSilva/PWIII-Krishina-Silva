@@ -1,0 +1,62 @@
+Método GET:
+
+http://localhost:3000/api/read
+
+    {
+        "id": 1,
+        "name": "alo",
+        "email": "alo@gmail.com"
+    }
+
+[
+    {
+        "id": 1,
+        "name": "alo",
+        "email": "alo@gmail.com"
+    }
+]
+
+Método POST:
+
+http://localhost:3000/api/create
+
+    {
+        "name": "bezerro",
+        "email": "bezerro@gmail.com"
+    }
+
+{
+    "id": 7,
+    "message": "Usuário criado com sucesso!"
+}
+
+Método PUT: 
+
+http://localhost:3000/api/update
+
+    {
+        "id": 2,
+        "name": "João",
+        "email": "joao@gmail.com"
+    }
+
+{
+    "message": "Usuário atualizado com sucesso!"
+}
+
+Método DELETE: 
+
+http://localhost:3000/api/delete
+
+    {
+        "id": 7,
+        "name": "bezerro",
+        "email": "bezerro@gmail.com"
+    }
+
+{
+    "message": "Usuário deletado com sucesso!"
+}
+
+
+
